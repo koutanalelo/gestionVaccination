@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#778385">
+
+    <!-- Header Image -->
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img" />
+    </LinearLayout>
+
+    <!-- Menu Title -->
+    <LinearLayout
+        android:id="@+id/layoutMenuTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:padding="8dp"
+            android:text="MENU DU BEBE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Profil Button -->
+    <LinearLayout
+        android:id="@+id/layoutProfil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutMenuTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img_1" />
+
+        <Button
+            android:id="@+id/idProfil"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="3"
+            android:backgroundTint="#09427d"
+            android:text="LISTE COMPLET" />
+    </LinearLayout>
+
+    <!-- Babies List Button -->
+    <LinearLayout
+        android:id="@+id/layoutBabies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutProfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img_3" />
+
+        <Button
+            android:id="@+id/idAdd"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="3"
+            android:backgroundTint="#09427d"
+            android:text="LISTE DES BEBES" />
+    </LinearLayout>
+
+    <!-- Vaccines List Button -->
+    <LinearLayout
+        android:id="@+id/layoutVaccines"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutBabies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img_4" />
+
+        <Button
+            android:id="@+id/idC"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="3"
+            android:backgroundTint="#09427d"
+            android:text="VACCIN POUR MON BEBE" />
+    </LinearLayout>
+
+    <!-- Logout Button -->
+    <LinearLayout
+        android:id="@+id/layoutLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutVaccines"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img_5" />
+
+        <Button
+            android:id="@+id/idDeconnexion"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="3"
+            android:backgroundTint="#09427d"
+            android:text="DECONNEXION" />
+    </LinearLayout>
+
+    <!-- Add Baby Button -->
+    <LinearLayout
+        android:id="@+id/layoutAddBebe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutLogout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img_16" />
+
+        <Button
+            android:id="@+id/idAddBebe"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="3"
+            android:backgroundTint="#09427d"
+            android:text="AJOUTER UN BEBE" />
+    </LinearLayout>
+
+    <!-- Profile Baby Button -->
+    <LinearLayout
+        android:id="@+id/layoutProfilBebe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutAddBebe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img_17" />
+
+        <Button
+            android:id="@+id/idProfilBebe"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="3"
+            android:backgroundTint="#09427d"
+            android:text="PROFIL DU BEBE" />
+    </LinearLayout>
+
+    <!-- Carnet de Vaccination Button -->
+    <LinearLayout
+        android:id="@+id/layoutVaccin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutProfilBebe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img_18" />
+
+        <Button
+            android:id="@+id/idCn"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="3"
+            android:backgroundTint="#09427d"
+            android:text="CARNETS DE VACCINATION" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

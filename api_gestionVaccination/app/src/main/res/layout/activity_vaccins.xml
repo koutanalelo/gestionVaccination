@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header: Logo ou En-tête -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_11" />
+    </LinearLayout>
+
+    <!-- Titre de la page -->
+    <TextView
+        android:id="@+id/textViewVaccinsBebe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vaccins du Bébé"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- ListView des vaccins déjà administrés au bébé -->
+    <ListView
+        android:id="@+id/listViewVaccinsBebe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Titre : Tous les vaccins disponibles -->
+    <TextView
+        android:id="@+id/textViewTousVaccins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tous les Vaccins Disponibles"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- ListView de tous les vaccins disponibles -->
+    <ListView
+        android:id="@+id/listViewTousVaccins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Titre : Vaccins à venir -->
+    <TextView
+        android:id="@+id/textViewVaccinsAVenir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vaccins à Venir"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- ListView des vaccins à venir -->
+    <ListView
+        android:id="@+id/listViewVaccinsAVenir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAdminTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tableau de Bord Administrateur"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnGestionUtilisateurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestion des Utilisateurs"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnGestionVaccins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestion des Vaccins"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnStatistiques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Statistiques"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

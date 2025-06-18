@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">api_gestionVaccination</string>
+    <string name="design">design</string>
+
+
+    <!-- Définir l'array pour le Spinner -->
+    <string-array name="spinner_options">
+        <item>Admin</item>
+        <item>Medecin</item>
+        <item>Parent</item>
+    </string-array>
+</resources>

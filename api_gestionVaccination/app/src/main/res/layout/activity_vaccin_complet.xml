@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header: Logo ou En-tête -->
+
+    <!-- Titre : Vaccins du Bébé -->
+    <ImageView
+        android:id="@+id/imageView_3"
+        android:layout_width="172dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/img_3" />
+
+    <TextView
+        android:id="@+id/textViewVaccinsBebe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Vaccins pour votre Bébé"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewvaccinsBebe"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp" />
+
+    <!-- Espacement entre les sections -->
+
+    <!-- Titre : Tous les vaccins disponibles -->
+
+    <TextView
+        android:id="@+id/textViewTousVaccins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Tous les Vaccins Disponibles dans l'application"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Espacement entre les sections -->
+    <ListView
+        android:id="@+id/listViewTousvaccins"
+        android:layout_width="wrap_content"
+        android:layout_height="292dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Titre : Vaccins à Venir -->
+    <TextView
+        android:id="@+id/textViewVaccinsAVenir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Vaccins à Venir"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewvaccinsAVenir"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

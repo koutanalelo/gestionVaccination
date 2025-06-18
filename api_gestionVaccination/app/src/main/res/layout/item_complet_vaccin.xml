@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <!-- Nom du vaccin -->
+        <TextView
+            android:id="@+id/textViewNom"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:text="Nom:"
+            android:textSize="14sp"
+
+
+            />
+
+        <!-- Description du vaccin -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Description:"
+
+
+            />
+
+        <!-- Âge recommandé pour le vaccin -->
+        <TextView
+            android:id="@+id/textViewAgeRecommande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="age recommande"
+
+
+            />
+
+        <!-- ID Bébé (Masqué par défaut) -->
+        <TextView
+            android:id="@+id/textViewIdBebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="ID Bébé : "
+            android:visibility="gone"/>
+
+        <!-- Email (Masqué par défaut) -->
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Email : "
+            android:visibility="gone"/>
+
+        <!-- Rôle (Masqué par défaut) -->
+        <TextView
+            android:id="@+id/textViewRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Rôle : "
+            android:visibility="gone"/>
+
+        <!-- Mot de passe (Masqué par défaut) -->
+        <TextView
+            android:id="@+id/textViewMdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Mot de passe : "
+            android:visibility="gone"/>
+
+        <!-- Date de renouvellement -->
+        <TextView
+            android:id="@+id/textViewDateRenouvellement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Date de renouvellement : "/>
+
+    </LinearLayout>
+</ScrollView>

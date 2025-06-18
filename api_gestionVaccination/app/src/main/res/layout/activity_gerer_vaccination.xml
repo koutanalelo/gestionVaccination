@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:spacing="8dp">
+
+
+
+    <!-- Champ Nom du vaccin -->
+    <EditText
+        android:id="@+id/editTextVaccin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom du vaccin"
+        android:layout_marginBottom="18dp"
+        android:inputType="text"
+        android:textSize="20sp" /> <!-- Augmentation de la taille de texte -->
+
+    <!-- Champ Description du vaccin -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description du vaccin"
+        android:layout_marginBottom="8dp"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:gravity="top|start"
+        android:scrollbars="vertical"
+        android:textSize="20sp" /> <!-- Augmentation de la taille de texte -->
+
+    <!-- Champ Âge recommandé -->
+    <EditText
+        android:id="@+id/editTextAgeRecommande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Âge recommandé"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"
+        android:textSize="20sp" /> <!-- Augmentation de la taille de texte -->
+
+    <!-- Champ Date du vaccin -->
+    <EditText
+        android:id="@+id/editTextDateVaccin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date du vaccin"
+        android:layout_marginBottom="18dp"
+        android:inputType="none"
+        android:textSize="20sp" /> <!-- Augmentation de la taille de texte -->
+
+    <!-- Spinner pour sélectionner un bébé -->
+
+    <!-- Bouton Ajouter le vaccin -->
+    <Spinner
+        android:id="@+id/spinnerBebe"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnAjouterVaccin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ajouter le vaccin"
+        android:textSize="22sp" /> <!-- Augmentation de la taille du texte pour le bouton -->
+
+</LinearLayout>
